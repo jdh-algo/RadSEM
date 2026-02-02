@@ -1,10 +1,6 @@
 """
 RadSEM pipeline: run step1 (rewrite) on both gen_file and gt_file,
 then step2 (tag) on the two rewritten outputs, then step3 (score).
-
-Difference from original RadSEM_score: gt_file also goes through step1
-to produce gt_rewritten_file; step2 then uses gen_rewritten_file and
-gt_rewritten_file (both with rewritten_report).
 """
 import os
 import sys
