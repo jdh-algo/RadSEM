@@ -20,8 +20,7 @@ RadSEM/
 │   └── step3.py          # Score calculation
 ├── run_radsem.py         # Main pipeline orchestrator
 ├── groundtruth.jsonl     # Reference reports
-├── model_output.jsonl    # Generated reports to evaluate
-└── README.md
+└── model_output.jsonl    # Generated reports to evaluate
 ```
 
 ## Installation
