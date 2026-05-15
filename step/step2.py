@@ -1,5 +1,5 @@
 """
-Step 2: Tag generation. Takes two rewritten-report JSONL files (gen and gt),
+Step 2: Sentence matching. Takes two rewritten-report JSONL files (gen and gt),
 aligns by name, and produces tag JSONL (pairs + unmatched_sentences).
 Both input files must contain rewritten_report (output of step1).
 """
