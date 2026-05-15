@@ -5,9 +5,9 @@ RadSEM is a semantic evaluation metric for radiology reports that breaks down re
 ## Overview
 
 RadSEM evaluates radiology reports through three main steps:
-1. **Step 1 (Rewrite)**: Converts reports into atomic sentences following strict rules
-2. **Step 2 (Tag)**: Aligns sentences between generated and reference reports with detailed relationship labels
-3. **Step 3 (Score)**: Computes weighted F1 scores for abnormal and normal findings
+1. **Step 1 (Report processing)**: Converts reports into atomic sentences following strict rules
+2. **Step 2 (Sentence matching)**: Aligns sentences between generated and reference reports with detailed relationship labels
+3. **Step 3 (Scoring)**: Computes weighted F1 scores for abnormal and normal findings
 
 ## Project Structure
 
@@ -16,7 +16,7 @@ RadSEM/
 ├── l1_l5/                # L1–L5 evaluation data and filtered samples
 ├── step/
 │   ├── step1.py          # Report rewriting into atomic sentences
-│   ├── step2.py          # Sentence alignment and tagging
+│   ├── step2.py          # Sentence matching and tagging
 │   └── step3.py          # Score calculation
 ├── run_radsem.py         # Main pipeline orchestrator
 ├── groundtruth.jsonl     # Reference reports
