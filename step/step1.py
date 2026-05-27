@@ -201,6 +201,7 @@ Return ONLY valid JSON with exactly one key:
             logging.error(f"Response: {divided_findings_str}")
             return None
         rewritten_report = json_res.get('rewritten_report')
+        rewritten_report = '. '.join(dict.fromkeys(s.strip().rstrip('.') for s in rewritten_report.split('. ') if s.strip())).strip() + '.' if rewritten_report else rewritten_report
         if not rewritten_report:
             logging.warning(f"rewritten_report not found: {volumename}")
             return None
